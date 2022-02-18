@@ -22,9 +22,9 @@ michelangelo.forward(random.randrange(1,101))
 leonardo.forward(random.randrange(1,101))
 michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
-for x in range(1,11):
-  michelangelo.forward(random.randrange(1,11))
-  leonardo.forward(random.randrange(1,11))
+for number in range(1,11):
+  michelangelo.forward(random.randrange(0,11))
+  leonardo.forward(random.randrange(0,11))
 michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
 # Part B - complete part B here
@@ -33,7 +33,7 @@ shape_sides = (3,4,6,9,12)
 for side in shape_sides:
   angle = 360/side
   side_range = side+1
-  for i in range(1,side_range):
+  for number in range(1,side_range):
     leonardo.left(angle)
     leonardo.forward(100)
   leonardo.clear()  
